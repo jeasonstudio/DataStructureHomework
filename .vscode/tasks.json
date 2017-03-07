@@ -1,18 +1,12 @@
 {
     "version": "0.1.0",
-    "command": "clang++",
+    "command": "gcc",
     "isShellCommand": true,
     "showOutput": "always",
-    "args": [
-        "clang",
-        "${file}",
-        "-o",
-        "${file}.out",
-        "&&",
-        "./${file}.out"
-    ],
+    "echoCommand": true,
+    "args": ["-g", "-o", "${relativeFile}.out", "${relativeFile}"],
     "problemMatcher": {
-        "owner": "cpp",
+        "owner": "c",
         "fileLocation": [
             "relative",
             "${workspaceRoot}"

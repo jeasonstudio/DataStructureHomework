@@ -1,12 +1,21 @@
 {
     "version": "0.2.0",
     "configurations": [{
-        
-        "name": "C/C++Debug",
-        "type": "lldb-mi",
+        "name": "C++ Launch",
+        "type": "cppdbg",
         "request": "launch",
-        "target": "${file}.o",
-        "cwd": "${workspaceRoot}",
-        "preLaunchTask": "clang++"
+        "preLaunchTask": "gcc",
+        "program": "${file}.out",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "externalConsole": true,
+        "internalConsoleOptions": "openOnSessionStart",
+        "externalConsole": true,
+        "stopAtEntry": false,
+        "osx": {
+            "MIMode": "lldb"
+        }
     }]
 }
