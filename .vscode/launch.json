@@ -13,6 +13,7 @@
         "externalConsole": true,
         "internalConsoleOptions": "openOnSessionStart",
         "externalConsole": true,
+        "filterStdout": true,
         "stopAtEntry": false,
         "osx": {
             "MIMode": "lldb"

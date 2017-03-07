@@ -42,6 +42,12 @@ int createLinkList(SList *p_list, int size)
 
 int main(void)
 {
+    int a = 2, b = 5;
+    for (int i = 0; i < 4; i++)
+    {
+        b = a + b;
+        a = a * b;
+    }
     printf("Started ...\n");
     printf("Hello World.\n");
 }
