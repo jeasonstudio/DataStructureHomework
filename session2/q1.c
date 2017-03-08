@@ -3,51 +3,91 @@
  * time: 3.7
  */
 
-#include "../front/jeason.h"
-
 // build & run :
 // clang q1.c && ./a.out
 
-typedef int Item;
-typedef struct node *PNode;
+#include "../front/jeason.h"
 
-// definded node
+typedef int Item;
+// definded node & link pointer
 typedef struct node
 {
     Item num;
-    PNode next;
-} Node, *SList;
+    struct node *next;
+} linkNode, *link;
 
-// create a linked list
-int createLinkList(SList *p_list, int size)
+// print the linked line
+link createLinkedLine()
 {
-    PNode p = NULL;
-    int i;
-
-    *p_list = (SList)malloc(sizeof(Node));
-    if (*p_list == NULL)
-        return -1;
-    (*p_list)->next = NULL;
-    for (i = size; i > 0; i--)
+    int DATA;
+    scanf("%d", &DATA);
+    link thisNode = (link)malloc(sizeof(linkNode));
+    link resNode = thisNode;
+    while (DATA > 0)
     {
-        p = (PNode)malloc(sizeof(Node));
-        if (p == NULL)
-            return -1;
-        p->num = 0;
-        p->next = (*p_list)->next;
-        (*p_list)->next = p;
+        link nextNode = (link)malloc(sizeof(linkNode));
+        thisNode->num = DATA;
+        thisNode->next = nextNode;
+
+        thisNode = nextNode;
+        scanf("%d", &DATA);
     }
-    return 1;
+    thisNode->next = NULL;
+    return resNode;
 }
 
+// format print linked line
+void printLinkedLine(link tag)
+{
+    link n = tag;
+    while (n->next)
+    {
+        printf("%d ", n->num);
+        n = n->next;
+    }
+    printf("\n");
+}
+
+// Linked Line A - B return A
+link ASubB(link tagA, link tagB)
+{
+    link fromB = tagB;
+    link fromA = tagA;
+    while (fromB)
+    {
+        while (fromB->num && fromA)
+        {
+            if (fromB->num == fromA->num)
+            {
+                if (fromA->next && fromA->next->next)
+                    fromA->next = fromA->next->next;
+                else
+                    fromA->next = NULL;
+            }
+            else
+            {
+                fromA = fromA->next;
+            }
+            fromB = fromB->next;
+        }
+    }
+
+    return tagA;
+}
+
+// function main
 int main(void)
 {
-    int a = 2, b = 5;
-    for (int i = 0; i < 4; i++)
-    {
-        b = a + b;
-        a = a * b;
-    }
-    printf("Started ...\n");
-    printf("Hello World.\n");
+    printf("Please input linked line A:\n");
+    link A = createLinkedLine();
+    printf("Please input linked line B:\n");
+    link B = createLinkedLine();
+
+    printf("Linked line A:\n");
+    printLinkedLine(A);
+    printf("Linked line B:\n");
+    printLinkedLine(B);
+
+    printf("A - B = ");
+    printLinkedLine(ASubB(A, B));
 }

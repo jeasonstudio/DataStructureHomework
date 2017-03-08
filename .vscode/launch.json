@@ -4,7 +4,7 @@
         "name": "C++ Launch",
         "type": "cppdbg",
         "request": "launch",
-        "preLaunchTask": "gcc",
+        "preLaunchTask": "clang",
         "program": "${file}.out",
         "args": [],
         "stopAtEntry": false,
@@ -12,9 +12,7 @@
         "environment": [],
         "externalConsole": true,
         "internalConsoleOptions": "openOnSessionStart",
-        "externalConsole": true,
         "filterStdout": true,
-        "stopAtEntry": false,
         "osx": {
             "MIMode": "lldb"
         }
