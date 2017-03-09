@@ -10,6 +10,7 @@
         "stopAtEntry": false,
         "cwd": "${fileDirname}",
         "environment": [],
+        // "Terminal": "",
         "externalConsole": true,
         "internalConsoleOptions": "openOnSessionStart",
         "filterStdout": true,

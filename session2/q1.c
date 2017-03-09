@@ -48,46 +48,96 @@ void printLinkedLine(link tag)
     printf("\n");
 }
 
-// Linked Line A - B return A
-link ASubB(link tagA, link tagB)
+// function A - B
+link ASubB(link A, link B)
 {
-    link fromB = tagB;
-    link fromA = tagA;
-    while (fromB)
+    link fromA, fromB, r;
+    fromA = A;
+    r = A;
+    fromB = B->next;
+
+    // Search the same part between A & B
+    while (fromA)
     {
-        while (fromB->num && fromA)
+        while (fromB)
         {
-            if (fromB->num == fromA->num)
+            // Delete from A
+            if (fromA->next->num == fromB->num)
             {
-                if (fromA->next && fromA->next->next)
-                    fromA->next = fromA->next->next;
-                else
-                    fromA->next = NULL;
+                r = fromA->next;
+                fromA->next = r->next;
+                free(r);
+                break;
             }
             else
             {
-                fromA = fromA->next;
+                fromB = fromB->next;
             }
-            fromB = fromB->next;
+        }
+        fromB = B->next;
+        if (fromA->next)
+            fromA = fromA->next;
+        else
+        {
+            fromA->next = NULL;
+            break;
         }
     }
 
-    return tagA;
+    return fromA;
 }
 
-// function main
-int main(void)
+// 函数：A交B
+link LA_Intersection_LB(link A, link B)
 {
-    printf("Please input linked line A:\n");
-    link A = createLinkedLine();
-    printf("Please input linked line B:\n");
-    link B = createLinkedLine();
+    link C, p, q, r, s;
+    p = A->next;
+    q = B->next;
 
-    printf("Linked line A:\n");
-    printLinkedLine(A);
-    printf("Linked line B:\n");
-    printLinkedLine(B);
+    // 新建链表C
+    C = (link)malloc(sizeof(linkNode));
+    C->next = NULL;
+    r = C;
 
-    printf("A - B = ");
-    printLinkedLine(ASubB(A, B));
+    // 寻找AB相同的部分
+    while (p)
+    {
+        while (q)
+        {
+            // 找到相同部分添加到C中
+            if (p->num == q->num)
+            {
+                // 检查是否以及添加
+                link temp;
+                temp = C->next;
+                while (temp && temp->num != p->num)
+                {
+                    temp = temp->next;
+                }
+                if (temp != NULL)
+                {
+                    break;
+                }
+                else
+                {
+                    // 添加到C中
+                    s = (link)malloc(sizeof(linkNode));
+                    r->next = s;
+                    s->num = p->num;
+                    s->next = NULL;
+                    r = s;
+                    break;
+                }
+            }
+            else
+            {
+                q = q->next;
+            }
+        }
+        q = B->next;
+        p = p->next;
+    }
+    r->next = NULL;
+    return C;
 }
+
