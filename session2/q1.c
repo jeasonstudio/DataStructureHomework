@@ -8,12 +8,12 @@
 
 #include "../front/jeason.h"
 
-typedef int Item;
-// definded node & link pointer
-typedef struct node {
-  Item num;
-  struct node *next;
-} linkNode, *link;
+// typedef int Item;
+// // definded node & link pointer
+// typedef struct node {
+//   Item num;
+//   struct node *next;
+// } linkNode, *link;
 
 // print the linked line
 link createLinkedLine() {
