@@ -4,8 +4,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-// #include <conio.h>
-
 // q1 & q3
 typedef int Item;
 // definded node & link pointer
