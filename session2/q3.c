@@ -1,7 +1,14 @@
+/**
+  * Auther: Jeason
+  * CreateTime: 3.10
+  * FileName: Question3.c
+  * Description: Search node
+  */
+
 #include "../front/jeason.h"
 
 // print the linked line
-link createLinkedLine(int len) {
+link createLinkedLineNum(int len) {
   int DATA;
   link firstNode = (link)malloc(sizeof(linkNode));
   link thisNode = (link)malloc(sizeof(linkNode));
@@ -45,7 +52,7 @@ void search(link TABLE, link start, int tag) {
 }
 
 int main(void) {
-  link resNode = createLinkedLine(10);
+  link resNode = createLinkedLineNum(10);
   search(resNode, resNode, 5);
 
   printf("Search End!");

@@ -1,3 +1,10 @@
+/**
+  * Auther: Jeason
+  * CreateTime: 3.8
+  * FileName: Question2.c
+  * Description: Sequence table of Student
+  */
+
 #include "../front/jeason.h"
 
 // 根据学号删除节点

@@ -1,19 +1,11 @@
 /**
- * auther: Jeason
- * time: 3.7
- */
-
-// build & run :
-// clang q1.c && ./a.out
+  * Auther: Jeason
+  * CreateTime: 3.7
+  * FileName: Question1.c
+  * Description: La - Lb & La ∩ Lb
+  */
 
 #include "../front/jeason.h"
-
-// typedef int Item;
-// // definded node & link pointer
-// typedef struct node {
-//   Item num;
-//   struct node *next;
-// } linkNode, *link;
 
 // print the linked line
 link createLinkedLine() {
