@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,14 +24,11 @@ void multiply(int *a, int *b, int *c) {
   int i, j;
   for (i = 0; i < 2 * N; ++i) *(c + i) = 0;
 
-  //数组a中的每位逐位与数组b相乘，并把结果存入数组c
   for (i = 0; i < N; ++i)
     for (j = 0; j < N; ++j) *(c + i + j) += *(a + i) * *(b + j);
-  //这里是移位、进位
   for (i = 0; i < 2 * N - 1; ++i) {
-    *(c + i + 1) +=
-        *(c + i) / 10;  //将十位上的数向前进位，并加上原来这个位上的数
-    *(c + i) = *(c + i) % 10;  //将剩余的数存原来的位置上
+    *(c + i + 1) += *(c + i) / 10;
+    *(c + i) = *(c + i) % 10;
   }
 }
 
