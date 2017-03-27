@@ -1,3 +1,9 @@
+## 数据结构第五章作业
+#### 赵吉彤 41524122 计1501
+
+### 题目一
+
+```cpp
 #include "../front/jeason.h"
 
 struct threeNumNode {
@@ -58,3 +64,20 @@ int main(void) {
   printf("Finished threeNumNode");
   // 十字链表见图
 }
+```
+
+### 十字链表
+
+![alt](file:///Users/Jeason/Documents/ToDos/DataStructureHomework/session5/shizi.png)
+
+### 题目二
+
+> 广义表表示： H=(A,B,b2)=((a1,D,a3),(b1,b2,b3),b2)=((a1,(d1,d2,d3),a3),(b1,b2,b3),b2)
+
+#### 单链结构
+
+![alt](file:///Users/Jeason/Documents/ToDos/DataStructureHomework/session5/dan.png)
+
+#### 双链结构
+
+![alt](file:///Users/Jeason/Documents/ToDos/DataStructureHomework/session5/shuang.png)
