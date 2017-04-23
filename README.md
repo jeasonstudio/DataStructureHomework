@@ -15,5 +15,5 @@ ${fileExtname} the current opened file's extension(当前打开文件的扩展�
 ${cwd} the task runner's current working directory on startup()
 ```
 
-![](./show.jpeg)
+![](./show.png)
 
