@@ -7,7 +7,7 @@ function res = SumOfMult(n)
     res = 0;
     mySum = 1;
     for i = 1:n
-        res = res * i;
-        mySum = mySum + res;
+        mySum = mySum * i;
+        res = res + mySum;
     end
 end
