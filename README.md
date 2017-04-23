@@ -17,5 +17,3 @@ ${cwd} the task runner's current working directory on startup()
 
 ![](./show.jpeg)
 
-
-H=(A,B,b2)=((a1,D,a3),(b1,b2,b3),b2)=((a1,(d1,d2,d3),a3),(b1,b2,b3),b2)
