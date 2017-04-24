@@ -1,15 +1,17 @@
 #include "./jeason.h"
 
+int len = 0;
+
 // print the linked line
 link CreatList() {
   int DATA, nodeID = 1;
-  scanf("%d", &DATA);
   link thisNode = (link)malloc(sizeof(linkNode));
   link resNode = thisNode;
+  scanf("%d", &DATA);
   while (DATA != 0) {
     link nextNode = (link)malloc(sizeof(linkNode));
     thisNode->id = nodeID;
-    thisNode->num = DATA;
+    if (DATA != 0) thisNode->num = DATA;
     thisNode->next = nextNode;
 
     nodeID++;
@@ -18,6 +20,7 @@ link CreatList() {
     scanf("%d", &DATA);
   }
   thisNode->next = NULL;
+  len = nodeID;
   return resNode;
 }
 
@@ -59,17 +62,23 @@ link AdjMax(link tag, int k) {
 
 // function main
 int main(void) {
-  int k;
-
   printf("Please input linked line A,type ZERO to end:\n");
   link A = CreatList();
 
   printf("Linked line A Your input is:\n");
   printLinkedLine(A);
 
-  printf("Please input k:\n");
+  printf("Please input k ( < %d):\n", len);
+
+  int k;
   scanf("%d", &k);
 
+  while (k > len) {
+    printf("Please input the right k ( < %d):\n", len);
+    scanf("%d", &k);
+  }
+
   link res = AdjMax(A, k);
-  printf("The Reasult ID is: %d \nThe Result Data is: %d \n", res->id, res->num);
+  printf("The Reasult ID is: %d \nThe Result Data is: %d \n", res->id,
+         res->num);
 }
