@@ -53,3 +53,9 @@
  - 在 octave-cli 模式下输入 `path` 查看是否添加成功
  - 在 octave-cli 模式下输入 `savepath` 保存修改的 `path`
  - 注意：function 命名要与文件名一致
+
+##### 如何使用 VSCode 编写 Matlab
+
+ - 首先你得有 `VSCode`，电脑里安装并配置好了 `octave` 及 `ocatve-cli`
+ - 安装插件 `Shift + cmd + p` 输入 `ext insatll Matlab` 稍等片刻，安装完成代码提示
+ - `` ctrl + ` `` 调出内置终端，开始使用
