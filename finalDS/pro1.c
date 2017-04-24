@@ -73,8 +73,8 @@ int main(void) {
   int k;
   scanf("%d", &k);
 
-  while (k > len) {
-    printf("Please input the right k ( < %d):\n", len);
+  while (k > len || k <= 0) {
+    printf("Please input the right k (0 < k < %d):\n", len);
     scanf("%d", &k);
   }
 
