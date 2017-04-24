@@ -68,7 +68,7 @@ int main(void) {
   printf("Linked line A Your input is:\n");
   printLinkedLine(A);
 
-  printf("Please input k ( < %d):\n", len);
+  printf("Please input k (0 < k < %d):\n", len);
 
   int k;
   scanf("%d", &k);
