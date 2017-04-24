@@ -4,14 +4,15 @@ int len = 0;
 
 // print the linked line
 link CreatList() {
-  int DATA, nodeID = 1;
+  int DATA, nodeID = 1, mt;
   link thisNode = (link)malloc(sizeof(linkNode));
   link resNode = thisNode;
   scanf("%d", &DATA);
-  while (DATA != 0) {
+  while (DATA != 0 && DATA == mt) {
     link nextNode = (link)malloc(sizeof(linkNode));
     thisNode->id = nodeID;
-    if (DATA != 0) thisNode->num = DATA;
+    thisNode->num = DATA;
+    mt = DATA;
     thisNode->next = nextNode;
 
     nodeID++;
