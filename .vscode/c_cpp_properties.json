@@ -1,12 +1,17 @@
 {
-    "configurations": [{
-        "name": "Mac",
-        "includePath": [
-            "/usr/include"
-        ],
-        "browse": {
-            "limitSymbolsToIncludedHeaders": true,
-            "databaseFilename": ""
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "",
+                "path": [
+                    "/usr/include"
+                ]
+            }
         }
-    }]
+    ]
 }
