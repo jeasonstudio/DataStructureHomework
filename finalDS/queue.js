@@ -13,8 +13,6 @@ class node {
 
 let myQueue = new Queue()
 
-console.log(myQueue)
-
 function gets(cb) {
     process.stdin.setEncoding('utf8');
     process.stdin.resume();
