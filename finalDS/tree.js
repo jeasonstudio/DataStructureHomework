@@ -5,7 +5,9 @@ class Tree {
         this.right = right;
     }
 }
+let n = require('./txt.js')
 let res = []
+
 function insertNode(text, node) {
     if (text < node.data) {
         node.left === undefined && (node.left = new Tree(text))
@@ -15,6 +17,7 @@ function insertNode(text, node) {
         node.right !== undefined && (insertNode(text, node.right))
     }
 }
+
 function printTree(node) {
     node.left === undefined ? res.push(node.data) : printTree(node.left)
     node.data !== undefined && res.push(node.data)
@@ -24,10 +27,8 @@ function printTree(node) {
     console.log('Your input is:', str);
     let strArr = str.split(' ')
     let thisTree = new Tree(strArr[0]);
-    for (let index = 1; index < strArr.length; index++) {
-        insertNode(strArr[index], thisTree)
-    }
+    strArr.map(r => insertNode(r, thisTree))
     console.log(thisTree)
     printTree(thisTree)
     console.log(new Set(res))
-})('everyone round you can hear you when you speak')
+})(n)
