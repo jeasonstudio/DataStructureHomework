@@ -1,5 +1,4 @@
-run: 258.295ms
-{ For: 82,
+module.exports =  { For: 82,
   Anthony: 8,
   Cleri: 1,
   Book: 9,

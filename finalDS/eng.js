@@ -93,4 +93,180 @@ Pixel loss + GAN [41] Like our method, Shrivastava et al.[41] uses an adversaria
 Feature loss + GAN We also test a variant of [41] where the L1 loss is computed over deep image features (VGG-16 relu4 2 [42]), rather than over RGB pixel values. Com- puting distances in deep feature space, like this, is also sometimes referred to as using a “perceptual loss” [19].
 BiGAN [6, 5] Unconditional GANs [13] learn a generator G : Z → X, that maps random noise Z to images X. The BiGAN [6] and ALI [5] frameworks propose to also learn the inverse mapping function F : X → Z, which projects a generated image x back to a low-dimensional latent code z. Though originally designed for mapping a latent vector z to an image x, we implemented the same objective for mapping a source image x to a target image y.
  Semantic segmentation metrics
-To evaluate the perfor- mance of photo→labels, we use the standard metrics from the Cityscapes benchmark, including per-pixel accuracy,`
+To evaluate the perfor- mance of photo→labels, we use the standard metrics from the Cityscapes benchmark, including per-pixel accuracy,Religion in Medieval England
+We learned about the Religion in Medieval(410-1066 c.e.)British,so I
+between
+1.Rise of Christianity
+collected and read some relevant information after class. And I interested in the
+history of religion in Medieval England(They are have same historical process
+religion in Medieval British and in Medieval England I guess).
+There would be divide into three parts.
+Christianity had been the official imperial religion of the Roman Empire,
+and the first churches were built in England in the second half of the 4th
+century, overseen by a hierarchy of bishops and priests. The collapse of the
+Roman system in the late 5th century, however, brought about the end of
+formal Christian religion in the east of England, and the new Germanic
+immigrants arrived with their own polytheistic gods, including Woden , Thunor
+and Tiw , still reflected in various English place names. Despite the
+resurgence of paganism in England, Christian communities still survived in
+more western areas such as Gloucestershire and Somerset .
+The movement towards Christianity began again in the late 6th and 7th
+centuries, helped by the conversion of the Franks in Northern France, who
+carried considerable influence in England. Pope Gregory I sent a team of
+missionaries to convert King Æthelberht of Kent and his household, starting
+the process of converting Kent. Augustine became the first Archbishop of
+Canterbury and started to build new churches across the South-East, reusing
+existing pagan shrines.
+Oswald and Oswiu , kings of Northumbria, were converted in the 630s
+and 640s, and the wave of change carried on through the middle of the 7th
+century across the kingdoms of Mercia, the South Saxons and the Isle of
+Wight . The process was largely complete by the end of the 7th century, but
+left a confusing and disparate array of local practices and religious
+ceremonies. This new Christianity reflected the existing military culture of the
+Anglo-Saxons: as kings began to convert in the 6th and 7th centuries,
+conversion began to be used as a justification for war against the remaining
+pagan kingdoms, for example, while Christian saints were imbued with martial
+properties.
+The Viking invasions of the 8th and 9th centuries reintroduced paganism
+to North-East England, leading in turn to another wave of conversion. The
+Norse settlers in England were converted relatively quickly, assimilating their
+beliefs into Christianity in the decades following the occupation of York, which
+the Archbishop had survived. The process was largely complete by the early
+10th century and enabled England's leading Churchmen to negotiate with the
+ warlords. As the Norse in mainland Scandinavia started to convert , many
+ mainland rulers recruited missionaries from England to assist in the process.
+ 2.Religious institutions
+ With the conversion of much of England in the 6th and 7th centuries,
+ there was an explosion of local church building. English monasteries formed
+ the main basis for the church, however, and were often sponsored by local
+ rulers, taking various forms, including mixed communities headed by
+ abbesses , bishop-led communities of monks , and others formed around
+ married priests and their families. Cathedrals were constructed, staffed either
+ with secular canons in the European tradition or, uniquely to England,
+ chapters of monks. These institutions were badly affected in the 9th century
+ by Viking raids and predatory annexations by the nobility. By the start of the
+ 10th century, monastic lands, financial resources and the quality of
+ monasteries' religious work had been much diminished.
+ Reforms followed under the kings of Wessex who promoted the
+ Benedictine rule then popular on the Continent. A reformed network of around
+ 40 monastic institutions across the south and east of England, under the
+ protection of the king, helped re-establish royal control over the reconquered
+ Danelaw.
+ The 1066 Norman conquest brought a new set of Norman and French
+ churchmen to power; some adopted and embraced aspects of the former
+ Anglo-Saxon religious system, while others introduced practices from
+ Normandy. Extensive English lands were granted to monasteries in
+ Normandy, allowing them to create daughter priories and monastic cells
+ across the kingdom. The monasteries were brought firmly into the web of
+ feudal relations, with their holding of land linked to the provision of military
+ support to the crown. The Normans adopted the Anglo-Saxon model of
+ monastic cathedral communities, and within seventy years the majority of
+ English cathedrals were controlled by monks; every English cathedral,
+ however, was rebuilt to some extent by the new rulers. England's bishops
+ remained powerful temporal figures, and in the early 12th-century raised
+ armies against Scottish invaders and built up extensive holdings of castles
+ across the country.
+ 3.Church, State and Heresy
+ The Church had a close relationship with the English state throughout
+ the Middle Ages. The bishops and major monastic leaders played an
+ important part in national government, having key roles on the king's council.
+Bishops often oversaw towns and cities, managing local taxation and
+government . This frequently became untenable with the Viking incursions of
+new accommodations with the local ealdormen , exchanging some authority
+and revenue for assistance in defence. The early English church was racked
+with disagreement on doctrine , which was addressed by the Synod of Whitby
+in 664; some issues were resolved, but arguments between the archbishops
+of Canterbury and York as to which had primacy across Britain began shortly
+afterwards and continued throughout most of the medieval period.
+William the Conqueror acquired the support of the Church for the
+invasion of England by promising ecclesiastical reform. William promoted
+celibacy amongst the clergy and gave ecclesiastical courts more power, but
+also reduced the Church's direct links to Rome and made it more accountable
+to the king. Tensions arose between these practices and the reforming
+movement of Pope Gregory VII , which advocated greater autonomy from
+royal authority for the clergy, condemned the practice of simony and promoted
+greater influence for the papacy in church matters. Despite the bishops
+continuing to play a major part in royal government, tensions emerged
+between the kings of England and key leaders within the English Church.
+Kings and archbishops clashed over rights of appointment and religious
+policy, and successive archbishops including Anselm , Theobald of Bec ,
+Thomas Becket and Stephen Langton were variously forced into exile,
+arrested by royal knights or even killed. By the early 13th century, however,
+the church had largely won its argument for independence, answering almost
+entirely to Rome.Sub-Roman Britain
+After the class,I find some online information about the acient history of British,and learn a lot with Wikipedia. I read some articles included in the entry named Sub- Roman Britain.And I will chose some to write down.
+Meaning of terms
+The period of sub-Roman Britain traditionally covers the history of the area which
+subsequently became England from the end of Roman imperial rule in 410 to the
+arrival of Saint Augustine in 597. The date taken for the end of this period is arbitrary
+in that the sub-Roman culture continued in the West of England (see Cornwall and
+Cumbria) and in Wales. This period has attracted a great deal of academic and
+popular debate, in part because of the scarcity of the written source material. The
+term "post-Roman Britain" is also used for the period, mainly in non-archaeological
+contexts; "sub-Roman" and "post-Roman" are both terms that apply to the old
+Roman province of Britannia , ie Britain south of the Forth – Clyde line. The period
+may also be considered as part of the early Middle Ages , if continuity with the
+following periods is stressed. Popular (and some academic) works use a range of
+more dramatic names for the period: the Dark Ages , the Brythonic Age, the Age of
+Tyrants, or the Age of Arthur .
+Breakdown of Roman society
+At the start of the 5th century, Britannia was part of the Western Roman Empire
+under Honorius .
+From the middle of the 5th century the Germanic raiders began to settle in the
+eastern river valleys.
+In the late 6th century there was another period of Saxon expansion, starting with the
+capture of Searoburh in 552 by the dynasty that later ruled Wessex , and including
+entry into the Cotswolds area after the Battle of Deorham , though the accuracy of
+the entries in the Anglo-Saxon Chronicle for this period has been questioned. This
+activity seems to have separated the Britons of the South West England (known later
+as the West Welsh) from those of Wales. (Just after the period being discussed, the
+Battle of Chester seems to have separated the latter from those of the north of
+England.
+Kingdoms
+Various British kingdoms existed at some point in the period. Some changed their
+names and some were absorbed by others. Not all of their names, especially in the
+southeast, are known, nor are the details of their political development; some
+authority structures left from the Roman period may have continued in charge of
+some areas for some time. At times some of the kingdoms were united by a ruler who
+was an overlord, while wars occurred between others. During the period the
+boundaries are likely to have changed.
+Religion
+Officially the Roman Empire was Christian at the start of the 5th century, but there is
+evidence of rural pagan temples being refurbished at the start of this period in
+western England. However, most temples seem to have been replaced eventually by
+Christian churches on the same site or nearby. "Celtic" churches or monasteries
+seem to have flourished during this period in the British areas, such as that at
+Glastonbury , but the "Saxons" were pagan. This reinforced a great antipathy
+between the peoples. Many Roman cemeteries continued into much later times, such
+as that at Cannington, Somerset . In the east there was a gradual transition among
+the pagan Saxons from cremation to inhumation . Although the arrival of St Augustine
+is traditionally seen as the significant Christianising event for the Saxons, a bishop
+had already arrived in Kent with the king's Merovingian wife. Other Saxons remained
+pagan after this time.
+In 429, a British Deacon Palladius had requested support from the Pope in Rome to
+combat Pelagianism .
+In the north, Whithorn is said to be the earliest church in Scotland, being founded in
+the 5th century by St Ninian .
+End of Roman Britain
+Various dates have been proposed to mark the end of Roman Britain, including the
+end of Roman currency coinage importation in 402, Constantine III's rebellion in 407,
+the rebellion mentioned by Zosimus in 409, and the Rescript of Honorius in 410.[43]
+Unlike modern decolonisation, the dating of the end of Roman Britain is complex, and
+the exact process is unknown.
+There is some controversy as to why Roman rule ended in Britain. The view first
+advocated by Wolfgang Mommsen was that Rome left Britain. This argument was
+substantiated over time, most recently by AS Esmonde-Cleary.     According to this
+argument, internal turmoil in the Roman Empire and the need to withdraw troops to
+fight off barbarian armies led Rome to abandon Britain. However, Michael Jones has
+advanced an alternative thesis that argues that Rome did not leave Britain, but that
+Britain left Rome. He highlights the numerous usurpers who came from Britain in the
+late 4th and early 5th centuries, and points out that the supply of coinage to Britain
+had dried up by the early 5th century, so that administrators and troops were not
+getting paid. All of this, he argues, led the British people to rebel against Rome. Both
+of these arguments are open to criticism, and the question is still open. It was a
+violent period, and there was probably widespread tension, alluded to in all the
+written sources. This may have led to the deaths of many Britons. There are also
+references to plagues. Laycock ( Britannia the Failed State , 2008) suggests tribal
+conflict, possibly even starting before 410, may have sliced up much of Britain and
+helped destroy the economy. The evidence from land use suggests a decline in
+production, which might be a sign of population decline.`
