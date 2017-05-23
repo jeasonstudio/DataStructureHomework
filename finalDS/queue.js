@@ -31,8 +31,8 @@ gets(function (m) {
         console.log('U should input just one char.')
     } else if (result === '0') {
         // console.log(1)
-        console.log('deQueue data is:', deQueue(myQueue))
-        printQueue(myQueue.head, [])
+        console.log('deQueue data is:', deQueue())
+        // printQueue(myQueue.head, [])
     } else if (result === '@') {
         // console.log(2)
         printQueue(myQueue.head, [])
@@ -41,23 +41,26 @@ gets(function (m) {
         process.stdin.emit('end');
     } else {
         // console.log(3)
+        console.log('enqueue', result)
         enQueue(result)
     }
 });
 
-function deQueue(q) {
-    if (q.head === undefined) {
+function deQueue() {
+    if (myQueue.head === undefined) {
         console.log('There is an empty queue!!')
     } else {
-        let d = q.head.data
-        q.head = q.head.next
+        let d = myQueue.head.data
+        myQueue.head = myQueue.head.next
+        console.log(myQueue)
         return d
     }
 }
 
 function enQueue(text) {
     let thisNode = new node(text)
-    if (myQueue.end === undefined && myQueue.head === undefined) {
+
+    if (myQueue.head === undefined) {
         myQueue.head = thisNode
         myQueue.end = thisNode
         myQueue.head.next = myQueue.end
@@ -65,6 +68,7 @@ function enQueue(text) {
         myQueue.end.next = thisNode
         myQueue.end = thisNode
     }
+    console.log(myQueue.head)
 }
 
 function printQueue(node, arr) {
