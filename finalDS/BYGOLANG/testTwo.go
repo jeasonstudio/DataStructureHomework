@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
-import "strings"
+import (
+	"bufio"
+	"fmt"
+	"io"
+	"os"
+	"strings"
+)
 
 // Stack struct as stack
 type Stack struct {
@@ -52,7 +57,7 @@ func dealInput(s string) []string {
 	midresult := New()
 	operator := New()
 	strArr := strings.Split(s, "")
-	fmt.Println(strArr)
+	// fmt.Println(strArr)
 
 	for i := range strArr {
 		if strArr[i] >= "0" && strArr[i] <= "9" {
@@ -100,6 +105,32 @@ func dealInput(s string) []string {
 	return midresult.String()
 }
 
+// ReadLine f
+func ReadLine(fileName string, handler func(string)) error {
+	f, err := os.Open(fileName)
+	if err != nil {
+		return err
+	}
+	buf := bufio.NewReader(f)
+	for {
+		line, err := buf.ReadString('\n')
+		line = strings.TrimSpace(line)
+		handler(line)
+		if err != nil {
+			if err == io.EOF {
+				return nil
+			}
+			return err
+		}
+	}
+	return nil
+}
+
+// Print P
+func Print(line string) {
+	fmt.Println("The result is :", strings.Join(dealInput(line), " "))
+}
+
 func main() {
-	fmt.Println("The result is :", dealInput("1  asd+f (a(^%$2$@+#3)*4)-5"))
+	ReadLine("test.txt", Print)
 }
