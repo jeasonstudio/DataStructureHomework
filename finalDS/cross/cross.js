@@ -23,6 +23,7 @@ class Rela {
 
     nodes.map((r, n) => nNodes[n] = new Node(n, r))
     relas.map((r, n) => {
+        if (r.split('->')[0] === r.split('->')[1]) throw new Error('Cannot same')
         let thisRela = new Rela(r.split('->')[0], r.split('->')[1])
         for (var index = 0; index < nNodes.length; index++) {
             if (nNodes[index].text === r.split('->')[0]) {
@@ -62,16 +63,37 @@ class Rela {
         }
         this.length -= 1　
     }
-
-    for (var o = 0; o < 10; o++) {
-        nNodes.map((r, n) => {
-            if (r.fin === undefined) {
-                console.log('Deleted node:', r.text)
-                r.fout = undefined
-                // TODO
-                nNodes.remove(n)
-                console.log('Rest nodes num:', nNodes.length)
+    let Len = nNodes.length
+    while (true) {
+        for (var index = 0; index < nNodes.length; index++) {
+            if (nNodes[index].fin === undefined) {
+                console.log('Deleted node:', nNodes[index].text)
+                for (var kndex = 0; kndex < nNodes.length; kndex++) {
+                    deleteFin(nNodes[kndex], nNodes[index].text)
+                }
+                nNodes.remove(index)
             }
-        })
+        }
+        if (nNodes.length === Len) {
+            break;
+        }
+        Len = nNodes.length
+    }
+
+    if (nNodes.length === 0) {
+        console.log('There is no O')
+    } else {
+        console.log('The gragh have O')
+        console.log('The rest Nodes are:', nNodes)
+    }
+
+    function deleteFin(obj, t) {
+        if (obj.fin === undefined) {
+            return true
+        } else if (obj.fin.tailvex === t) {
+            obj.fin = undefined
+        } else {
+            deleteFin(obj.fin, t)
+        }
     }
 })()
