@@ -81,10 +81,10 @@ class Rela {
     }
 
     if (nNodes.length === 0) {
-        console.log('There is no O')
+        console.log('Is DAG')
     } else {
-        console.log('The gragh have O')
-        console.log('The rest Nodes are:', nNodes)
+        console.log('Not DAG')
+        // console.log('The rest Nodes are:', nNodes)
     }
 
     function deleteFin(obj, t) {
