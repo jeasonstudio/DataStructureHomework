@@ -28,7 +28,7 @@ function printTree(node) {
     let strArr = str.split(' ')
     let thisTree = new Tree(strArr[0]);
     strArr.map(r => insertNode(r, thisTree))
-    console.log(thisTree)
+    // console.log(thisTree)
     printTree(thisTree)
     console.log(new Set(res))
 })(n)
