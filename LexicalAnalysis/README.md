@@ -13,7 +13,21 @@
 ```cpp
 #include <stdio.h>
 int main(void) {
-  char * name = "Jeason";
-  printf("Hello %s!\n", name);
+  char * _MyName = "Jeason";
+  printf("Hello %s!\n", _MyName);
 }
 ```
+
+其原理是基于正则表达式的，比如下面：
+
+```javascript
+const keyWord = /auto|short|int|long|float|double|char|struct|union|include|enum|typedef|const|unsigned|signed|extern|register|static|volatile|void|if|else|switch|case|for|do|while|goto|continue|break|default|sizeof|return/g
+const numberWord = /[0-9]+/g
+const identfierWord = /[A-Za-z0-9_]+/g
+const operatorWord = /\+|-|\*|\/|:=|>=|<=|#|=|%/g
+const delimiterWord = /[,\.;{}()"\\]/g
+```
+
+对应匹配，输出结果：
+
+![](static/test1.jpg)
