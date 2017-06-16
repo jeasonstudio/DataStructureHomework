@@ -1,9 +1,11 @@
 let fs = require("fs");
-const keyWord = /auto|short|int|long|float|double|char|struct|union|enum|typedef|const|unsigned|signed|extern|register|static|volatile|void|if|else|switch|case|for|do|while|goto|continue|break|default|sizeof|return/
-const numberWord = /[0-9]+/
-const identfierWord = /[A-Za-z]([A-Za-z][0-9])*/
-const operatorWord = /\+|-|\*|\/|:=|>=|<=|#|=/
-const delimiterWord = /[,\.;]/
+const keyWord = /auto|short|int|long|float|double|char|struct|union|include|enum|typedef|const|unsigned|signed|extern|register|static|volatile|void|if|else|switch|case|for|do|while|goto|continue|break|default|sizeof|return/g
+const numberWord = /[0-9]+/g
+const identfierWord = /[A-Za-z0-9_]+/g
+const operatorWord = /\+|-|\*|\/|:=|>=|<=|#|=/g
+const delimiterWord = /[,\.;{}]/g
+
+const allReg = /(auto|short|int|long|float|double|char|struct|union|include|enum|typedef|const|unsigned|signed|extern|register|static|volatile|void|if|else|switch|case|for|do|while|goto|continue|break|default|sizeof|return)|([0-9]+)|([A-Za-z0-9_]+)|(\+|-|\*|\/|:=|>=|<=|#|=|%)|([,\.;{}()"\\])/g
 
 function readLines(input, func) {
     let remaining = ''
@@ -37,5 +39,7 @@ let input = fs.createReadStream(__dirname + '/main.c')
 readLines(input, startAnalysis)
 
 function startAnalysis(data) {
-    console.log(data)
+    // console.log(data)
+    console.log(data.match(allReg))
+    // console.log(data.replace(delimiterWord, 'aaaaaaa'))
 }

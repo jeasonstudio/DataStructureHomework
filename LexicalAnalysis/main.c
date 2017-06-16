@@ -1,5 +1,5 @@
 #include <stdio.h>
 int main(void) {
-  char * name = "Jeason";
-  printf("Hello %s!\n", name);
+  char * _MyName001 = "Jeason";
+  printf("Hello %s!\n", _MyName001);
 }
