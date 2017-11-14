@@ -1,10 +1,10 @@
-#include<map>  
-#include<iostream>  
-#include<algorithm>  
-#include<string>  
-#include<sstream>  
-#include<fstream>  
-using namespace std;  
+#include<map>
+#include<iostream>
+#include<algorithm>
+#include<string>
+#include<sstream>
+#include<fstream>
+using namespace std;
   
 void process (string filename, string theWord) {
   map<string,int> word_count;
