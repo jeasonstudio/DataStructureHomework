@@ -1,9 +1,13 @@
 {
     "files.associations": {
-        "*.wxml": "html",
+        "*.wpy": "vue",
         "*.wxss": "css",
+        "*.wxml": "html",
         "*.vue": "vue",
         "*.m": "matlab",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "iosfwd": "cpp",
+        "sstream": "cpp",
+        "ostream": "cpp"
     }
 }

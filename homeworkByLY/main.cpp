@@ -22,7 +22,10 @@ int process (string filename, string theWord) {
     istringstream str(line);
     while (str >> word) {
       position = word.find(theWord);
-      if (position != word.npos) result++;
+      if (position != word.npos) {
+        cout << position;
+        result++;
+      }
     }
   }
   return result;
