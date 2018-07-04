@@ -11,7 +11,7 @@
         "cwd": "${fileDirname}",
         "environment": [],
         // "Terminal": "",
-        "externalConsole": true,
+        "externalConsole": false,
         "internalConsoleOptions": "openOnSessionStart",
         "filterStdout": true,
         "osx": {
