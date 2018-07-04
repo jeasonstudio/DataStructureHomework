@@ -1,5 +1,13 @@
+/**
+ * 一个词法分析程序，加深对词法分析原理的理解
+ * 
+ * Author: Jeason
+ * Date: Wed, Jul 4 2018
+ */
+
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 // tests
 // begin x:=9; if x>9 then x:=2*x+1/3; end #
@@ -33,8 +41,7 @@ int main(int argc, char const *argv[]) {
         break;
       case -1:
         printf("You have input a wrong string\n");
-        // _Exit(0);
-        break;
+        _exit(0);
       default:
         printf("(%6s, %-3d)\n", token, syn);
         break;
